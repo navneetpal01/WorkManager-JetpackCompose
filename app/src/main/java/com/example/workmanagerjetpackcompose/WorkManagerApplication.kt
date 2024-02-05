@@ -38,5 +38,4 @@ class CustomWorkerFactory @Inject constructor(private val api : DemoApi): Worker
         workerClassName: String,
         workerParameters: WorkerParameters
     ): ListenableWorker? = CustomWorker(api,appContext,workerParameters)
-
 }
